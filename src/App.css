@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-.nav{
+.nav {
   width: 100%;
   display: flex;
   justify-content: left;
@@ -10,25 +10,26 @@
   background-color: #fff;
 }
 
-.nav h2{
+.nav h2 {
   color: rgba(0, 128, 255, 0.915);
 }
-.nav ul{
+
+.nav ul {
   list-style: none;
   margin-left: 2rem;
   display: flex;
   align-items: center;
 }
 
-.link{
+.link {
   margin-left: 1rem;
 }
 
-.navLink{
+.navLink {
   text-decoration: none;
   color: black;
 }
 
-.navLink:hover{
-  color:  rgba(0, 128, 255, 0.915);
+.navLink:hover {
+  color: rgba(0, 128, 255, 0.915);
 }
