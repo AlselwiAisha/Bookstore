@@ -1,6 +1,7 @@
 import './Styles/BookList.css';
 import React from 'react';
 import AddNew from './AddNewBook';
+import Book from './Book';
 
 const BookList = () => {
   const books = [
@@ -28,16 +29,16 @@ const BookList = () => {
 
       <div className="book-list">
         {
-                books.map((book) => (
-                  <div className="book" key={book.id}>
-                    <h3 className="category">{book.category}</h3>
-                    <h2 className="booktitl">{book.booktitl}</h2>
-                    <h3 className="author">{book.author}</h3>
-                    <button type="button" className="btn">Remove</button>
-                  </div>
-                ))
-            }
-
+          books.map((book) => (
+            <Book
+              key={book.id}
+              id={book.id}
+              title={book.booktitl}
+              author={book.author}
+              category={book.category}
+            />
+          ))
+        }
       </div>
       <AddNew />
     </>
