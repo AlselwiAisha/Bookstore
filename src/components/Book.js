@@ -1,15 +1,18 @@
 import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { removeBook } from '../redux/books/booksSlise';
 
-const Book = (props) => {
-  const {
-    id, title, author, category,
-  } = props;
+const Book = ({
+  id, title, author, category,
+}) => {
+  const dispatch = useDispatch();
+
   return (
     <div className="book" key={id}>
       <h3 className="category">{category}</h3>
       <h2 className="booktitl">{title}</h2>
       <h3 className="author">{author}</h3>
-      <button type="button" className="btn">Remove</button>
+      <button type="button" className="btn" onClick={() => dispatch(removeBook({ id }))}>Remove</button>
     </div>
   );
 };
