@@ -1,29 +1,11 @@
 import './Styles/BookList.css';
 import React from 'react';
+import { useSelector } from 'react-redux';
 import AddNew from './AddNewBook';
 import Book from './Book';
 
 const BookList = () => {
-  const books = [
-    {
-      id: 1,
-      booktitl: 'book1',
-      author: 'author1',
-      category: 'category1',
-    },
-    {
-      id: 2,
-      booktitl: 'book2',
-      author: 'author2',
-      category: 'category2',
-    },
-    {
-      id: 3,
-      booktitl: 'book3',
-      author: 'author3',
-      category: 'category3',
-    },
-  ];
+  const { books } = useSelector((state) => state);
   return (
     <>
 
