@@ -19,7 +19,6 @@ const AddNew = () => {
   const submitHandler = (e) => {
     e.preventDefault();
     dispatch(addBook(data));
-    console.log(data);
     setAuthor('');
     setCategory('');
     setTitle('');
