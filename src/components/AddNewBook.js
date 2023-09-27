@@ -9,7 +9,7 @@ const AddNew = () => {
   const [author, setAuthor] = useState();
   const [category, setCategory] = useState();
   const data = {
-    id: uuidv4(),
+    item_id: uuidv4(),
     title,
     author,
     category,
@@ -18,10 +18,14 @@ const AddNew = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    dispatch(addBook(data));
-    setAuthor('');
-    setCategory('');
-    setTitle('');
+    if (title && author && category) {
+      dispatch(addBook(data));
+      setAuthor('');
+      setCategory('');
+      setTitle('');
+    } else {
+      alert('Fill all fields, please!');
+    }
   };
   return (
     <div className="add-new">
