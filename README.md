@@ -39,6 +39,7 @@
   <summary>Client</summary>
   <ul>
     <li><a href="#">React</a></li>
+    <li><a href="#">Redux</a></li>
   </ul>
 </details>
 
@@ -54,7 +55,7 @@
 <!-- LIVE DEMO -->
 
  ## 🚀 Live Demo <a name="live-demo"></a>
- coming soon
+ [Live Demo](https://bookstore-19oi.onrender.com)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p> 
