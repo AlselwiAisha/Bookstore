@@ -14,12 +14,12 @@
 input {
   padding: 0.5rem;
   margin: 0.5rem;
-  width: 12rem;
+  width: 15rem;
   border: 1px solid lightgrey;
 }
 
 .booktitle {
-  width: 20rem;
+  width: 40rem;;
 }
 
 .add-btn {

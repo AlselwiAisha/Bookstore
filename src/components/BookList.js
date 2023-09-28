@@ -28,7 +28,7 @@ const BookList = () => {
             <Book
               key={book.item_id}
               item_id={book.item_id}
-              title={book.booktitl}
+              title={book.title}
               author={book.author}
               category={book.category}
             />
