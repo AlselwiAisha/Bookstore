@@ -8,6 +8,7 @@ const AddNew = () => {
   const [title, setTitle] = useState();
   const [author, setAuthor] = useState();
   const [category, setCategory] = useState();
+  const [msg, setMsg] = useState('');
   const data = {
     item_id: uuidv4(),
     title,
@@ -24,9 +25,10 @@ const AddNew = () => {
       setCategory('');
       setTitle('');
     } else {
-      alert('Fill all fields, please!');
+      setMsg('Fill all fields, please!');
     }
   };
+
   return (
     <div className="add-new">
       <h2>ADD NEW BOOK</h2>
@@ -63,7 +65,9 @@ const AddNew = () => {
           {' '}
           Add book
         </button>
+
       </form>
+      <p style={{ color: 'red', margin: '8px' }}>{msg}</p>
     </div>
   );
 };
