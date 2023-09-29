@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react';
+import { CircularProgressbar } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
 import './Styles/zeplin.css';
 
 const Zeplin = () => {
@@ -12,7 +14,10 @@ const Zeplin = () => {
   return (
     <div className="zeplin">
       <div className="oval1">
-        <div className="Oval-2" />
+        {/* <div className="Oval-2" /> */}
+        <div className="Oval-2">
+          <CircularProgressbar value={rendom} styles={{ width: '50px' }} />
+        </div>
         <div className="comlt">
           <span className="-Percent-Complete">
             {rendom}
