@@ -20,7 +20,7 @@ const BookList = () => {
   }
 
   return (
-    <>
+    <div className="main">
 
       <div className="book-list">
         {
@@ -36,7 +36,7 @@ const BookList = () => {
         }
       </div>
       <AddNew />
-    </>
+    </div>
   );
 };
 

@@ -4,9 +4,11 @@ import './Styles/zeplin.css';
 const Zeplin = () => {
   const [rendom, setRundem] = useState();
   const getNumber = () => Math.floor(Math.random() * 100);
+
   useEffect(() => {
     setRundem(getNumber);
   }, []);
+
   return (
     <div className="zeplin">
       <div className="oval1">

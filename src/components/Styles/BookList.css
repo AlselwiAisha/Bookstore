@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto+Slab:wght@300;400;500&display=swap');
 
+.main {
+  width: 100%;
+  padding:0 6rem 0 6rem;
+  display: flex;
+  flex-direction: column;
+}
+
 .book-list {
-  width: 90%;
+  width: 100%;
   margin: 0.5rem;
   display: flex;
   flex-direction: column;
