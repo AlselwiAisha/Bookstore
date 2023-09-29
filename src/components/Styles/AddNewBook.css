@@ -3,26 +3,34 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 4.5rem;
+  margin-left: 4.2rem;
 }
 
 .add-new h2 {
   color: rgb(147, 145, 145);
-  margin: 1rem;
+  margin: 0.5rem;
+}
+
+.add-form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 input {
   padding: 0.5rem;
   margin: 0.5rem;
-  width: 12rem;
+  width: 20%;
   border: 1px solid lightgrey;
 }
 
 .booktitle {
-  width: 20rem;
+  width: 40%;
 }
 
 .add-btn {
+  width: 10%;
   padding: 0.5rem;
   color: #fff;
   background-color: rgba(4, 125, 247, 0.915);
